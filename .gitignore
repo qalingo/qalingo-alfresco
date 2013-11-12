@@ -1,0 +1,10 @@
+.settings
+.idea
+.classpath
+.project
+*.iml
+target
+alf_data_dev
+solr_home
+pom.xml.releaseBackup
+release.properties
