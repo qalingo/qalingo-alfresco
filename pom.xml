@@ -40,30 +40,27 @@
 
 	<dependencyManagement>
 		<dependencies>
-  <dependency>
-    <groupId>org.alfresco</groupId>
-    <artifactId>alfresco</artifactId>
-    <version>4.2</version>
-    <type>war</type>
-  </dependency>
-  <dependency>
-    <groupId>org.alfresco</groupId>
-    <artifactId>alfresco-wcm-quickstart-repo</artifactId>
-    <version>4.2</version>
-    <type>amp</type>
-  </dependency>
-
+			<dependency>
+				<groupId>org.alfresco</groupId>
+				<artifactId>alfresco</artifactId>
+				<version>4.2.e</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>org.alfresco</groupId>
+				<artifactId>alfresco-wcm-quickstart-repo</artifactId>
+				<version>4.2.e</version>
+				<type>amp</type>
+			</dependency>
 			<dependency>
 				<groupId>org.alfresco.maven.plugin</groupId>
 				<artifactId>alfresco-maven-plugin</artifactId>
 				<version>1.0.2</version>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
-
 	</dependencies>
 
 	<build>
