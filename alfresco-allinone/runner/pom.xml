@@ -9,7 +9,7 @@
     <parent>
         <groupId>org.hoteia.qalingo</groupId>
         <artifactId>qalingo-alfresco-allinone</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.8.1-SNAPSHOT</version>
     </parent>
 
     <profiles>

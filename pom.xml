@@ -4,12 +4,12 @@
 
 	<groupId>org.hoteia.qalingo</groupId>
 	<artifactId>qalingo-alfresco</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.8.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Qalingo CMS with Alfresco</name>
 	<description>Qalingo CMS with Alfresco</description>
 	<url>http://www.hoteia.com</url>
-	<inceptionYear>2013-2014</inceptionYear>
+	<inceptionYear>2012-2014</inceptionYear>
 	<organization>
 		<name>Hoteia</name>
 		<url>http://www.hoteia.com</url>
@@ -31,6 +31,15 @@
 	<properties>
 		<root.basedir>${project.basedir}</root.basedir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<qalingo.alfresco.version>0.8.1-SNAPSHOT</qalingo.alfresco.version>
+
+		<!-- 
+		| Defines the Alfresco GroupId \ Edition to work against. Allowed values are: org.alfresco | org.alfresco.enterprise
+		| NOTE: Please Refer to Alfresco Support for access to Enterprise artifacts -->
+        <alfresco.groupId>org.alfresco</alfresco.groupId>
+        <!-- Defines the Alfresco version to work against. Allowed values are: org.alfresco | org.alfresco.enterprise -->
+        <alfresco.version>4.2.f</alfresco.version>
+
 		<env.name>developpement</env.name>
 	</properties>
 
@@ -41,21 +50,31 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.alfresco</groupId>
+				<groupId>${alfresco.groupId}</groupId>
 				<artifactId>alfresco</artifactId>
-				<version>4.2.e</version>
+				<version>${alfresco.version}</version>
 				<type>war</type>
 			</dependency>
 			<dependency>
-				<groupId>org.alfresco</groupId>
+				<groupId>${alfresco.groupId}</groupId>
 				<artifactId>alfresco-wcm-quickstart-repo</artifactId>
-				<version>4.2.e</version>
+				<version>${alfresco.version}</version>
 				<type>amp</type>
 			</dependency>
 			<dependency>
 				<groupId>org.alfresco.maven.plugin</groupId>
 				<artifactId>alfresco-maven-plugin</artifactId>
 				<version>1.0.2</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hoteia.qalingo</groupId>
+				<artifactId>qalingo-alfresco-plugin</artifactId>
+				<version>${qalingo.alfresco.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hoteia.qalingo</groupId>
+				<artifactId>qalingo-alfresco-share-plugin</artifactId>
+				<version>${qalingo.alfresco.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

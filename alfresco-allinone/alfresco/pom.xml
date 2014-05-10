@@ -21,7 +21,7 @@
     <parent>
         <groupId>org.hoteia.qalingo</groupId>
         <artifactId>qalingo-alfresco-allinone</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.8.1-SNAPSHOT</version>
     </parent>
 
     <dependencies>
@@ -43,6 +43,10 @@
             <artifactId>alfresco-wcm-quickstart-repo</artifactId>
             <version>${alfresco.version}</version>
             <type>amp</type>
+        </dependency>
+        <dependency>
+            <groupId>org.hoteia.qalingo</groupId>
+            <artifactId>qalingo-alfresco-plugin</artifactId>
         </dependency>
     </dependencies>
 
